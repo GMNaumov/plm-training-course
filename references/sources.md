@@ -13,6 +13,8 @@
 | Источник | Использование в курсе |
 | --- | --- |
 | [PostgreSQL 18: Transaction Isolation](https://www.postgresql.org/docs/18/transaction-iso.html) | Снимки данных, видимость конкурентных изменений, конфликты транзакций; тема 02. |
+| [PostgreSQL 18: Constraints](https://www.postgresql.org/docs/18/ddl-constraints.html) | Виды ограничений и границы защиты локальной целостности; тема 02. |
+| [PostgreSQL 18: Explicit Locking](https://www.postgresql.org/docs/18/explicit-locking.html) | Блокировки, конфликты и взаимные ожидания при изменениях; тема 02. Выбор полного протокола конкурентного изменения графа остаётся задачей учебной реализации. |
 | [PostgreSQL 18: WITH Queries](https://www.postgresql.org/docs/18/queries-with.html) | Рекурсивные CTE, обход и контроль циклов; тема 08. SQL-запросы в курсе пока не реализованы. |
 | [PostgreSQL 18: Using EXPLAIN](https://www.postgresql.org/docs/18/using-explain.html) | Анализ плана и различие оценки и фактического выполнения; тема 04. |
 | [PostgreSQL 18: Indexes](https://www.postgresql.org/docs/18/indexes.html) | Назначение индексов и затраты их поддержки; тема 04. |
@@ -24,7 +26,7 @@
 | --- | --- |
 | [NIST SP 800-162: Guide to Attribute Based Access Control](https://www.nist.gov/publications/guide-attribute-based-access-control-abac-definition-and-considerations-1) | Определение ABAC по атрибутам субъекта, объекта, действия и среды; тема 03. Не устанавливает алгоритм прав конкретной PLM-системы. |
 | [NASA Systems Engineering Handbook: 5.0 Product Realization](https://www.nasa.gov/reference/5-0-product-realization/) | Различие верификации и валидации; тема 11. Руководство NASA не объявляется обязательной нормой для выбранного изделия. |
-| [NASA Systems Engineering Handbook: 6.0 Crosscutting Technical Management](https://www.nasa.gov/reference/6-0-crosscutting-technical-management/) | Дополнительное чтение по управлению требованиями, конфигурацией и техническими данными. |
+| [NASA Systems Engineering Handbook: 6.0 Crosscutting Technical Management](https://www.nasa.gov/reference/6-0-crosscutting-technical-management/) | Методическое чтение по управлению требованиями, конфигурацией и техническими данными; используется при углублённом объяснении темы 11. |
 
 ## Обмен и примеры продуктовых механизмов
 
