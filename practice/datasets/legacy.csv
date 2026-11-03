@@ -1,0 +1,8 @@
+source_id,item_code,mass,unit
+S1, ho-x ,2500,g
+S2,RO-X,1.2,kg
+S3,SEN-X,,g
+S4,HAR-X,100,mm
+S5,HO-X,2.5,kg
+S6,ECU-X,-1,kg
+S7,FW-X,NaN,kg

@@ -21,3 +21,7 @@
 ---
 
 [Предыдущая тема](../11-requirements-management/README.md) · [Следующая тема](../13-manufacturing-bom/README.md) · [Глоссарий](../../references/glossary.md)
+
+## Практическое закрепление
+
+[L09. Изменение: согласовано и внедрено](../../practice/exercises/l09-change/README.md). Условия, границы, заготовки и переход к эталону приведены в задании.

@@ -1,0 +1,4 @@
+/practice/output/*
+!/practice/output/.gitkeep
+**/__pycache__/
+*.class

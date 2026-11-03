@@ -1,0 +1,5 @@
+-- L01. Выполнить после reset. Схема lab, таблицы item/revision/occurrence.
+-- TODO: вывести все ревизии HO в предметном порядке rev_order.
+-- TODO: создать lab.iteration с ключом (revision_id, iteration_no), FK и CHECK > 0.
+-- TODO: сохранить два рабочих состояния HO-C без создания новой ревизии.
+-- TODO: вывести число идентичностей, ревизий и итераций отдельно.

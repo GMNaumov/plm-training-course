@@ -57,3 +57,7 @@
 ---
 
 [Предыдущая тема](../04-operations-and-performance/README.md) · [Следующая тема](../06-product-classification/README.md) · [Глоссарий](../../references/glossary.md)
+
+## Практическое закрепление
+
+[L04. Единицы, неизвестные значения и свойства](../../practice/exercises/l04-reference/README.md). Условия, границы, заготовки и переход к эталону приведены в задании.

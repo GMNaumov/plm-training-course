@@ -20,3 +20,7 @@ MBOM — производственное представление соста�
 ---
 
 [Предыдущая тема](../12-change-and-workflow/README.md) · [Следующая тема](../14-process-and-routing/README.md) · [Глоссарий](../../references/glossary.md)
+
+## Практическое закрепление
+
+[L10. Сверка EBOM и MBOM по путям](../../practice/exercises/l10-mbom/README.md). Условия, границы, заготовки и переход к эталону приведены в задании.

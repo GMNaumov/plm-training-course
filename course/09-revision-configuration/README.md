@@ -20,3 +20,7 @@
 ---
 
 [Предыдущая тема](../08-engineering-bom/README.md) · [Следующая тема](../10-option-configuration/README.md) · [Глоссарий](../../references/glossary.md)
+
+## Практическое закрепление
+
+[L06. Применяемость и объяснимый выбор ревизии](../../practice/exercises/l06-revision/README.md). Условия, границы, заготовки и переход к эталону приведены в задании.

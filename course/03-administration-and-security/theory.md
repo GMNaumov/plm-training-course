@@ -57,3 +57,7 @@ RBAC связывает разрешения с ролями. ABAC учитыв�
 ---
 
 [Предыдущая тема](../02-domain-and-data-model/README.md) · [Следующая тема](../04-operations-and-performance/README.md) · [Глоссарий](../../references/glossary.md)
+
+## Практическое закрепление
+
+[L02. Доступ и неполный результат](../../practice/exercises/l02-access/README.md). Условия, границы, заготовки и переход к эталону приведены в задании.

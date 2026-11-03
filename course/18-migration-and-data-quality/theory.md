@@ -69,3 +69,7 @@
 ---
 
 [Предыдущая тема](../17-apis-and-enterprise-integration/README.md) · [Следующая тема](../19-traceability-and-analytics/README.md) · [Глоссарий](../../references/glossary.md)
+
+## Практическое закрепление
+
+[L14. Python и SQL: перенос с происхождением](../../practice/exercises/l14-migration/README.md). Условия, границы, заготовки и переход к эталону приведены в задании.

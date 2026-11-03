@@ -1,0 +1,5 @@
+revision_id,property,value,unit
+HO-A,mass,2500,g
+RO-A,mass,1.2,kg
+SEN-A,mass,,kg
+HAR-A,mass,100,mm

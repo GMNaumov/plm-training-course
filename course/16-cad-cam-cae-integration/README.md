@@ -21,3 +21,7 @@
 ---
 
 [Предыдущая тема](../15-physical-product-lifecycle/README.md) · [Следующая тема](../17-apis-and-enterprise-integration/README.md) · [Глоссарий](../../references/glossary.md)
+
+## Практическое закрепление
+
+Связанное закрепление; отдельный практикум по всей теме не назначен. [L13. Java-потребитель: повтор, конфликт и откат](../../practice/exercises/l13-integration/README.md). Условия, границы, заготовки и переход к эталону приведены в задании.

@@ -71,3 +71,7 @@
 ---
 
 [Предыдущая тема](../09-revision-configuration/README.md) · [Следующая тема](../11-requirements-management/README.md) · [Глоссарий](../../references/glossary.md)
+
+## Практическое закрепление
+
+[L07. Ограничения опций на Python](../../practice/exercises/l07-options/README.md). Условия, границы, заготовки и переход к эталону приведены в задании.

@@ -76,3 +76,7 @@ flowchart LR
 ---
 
 [Предыдущая тема](../01-plm-pdm-foundations/README.md) · [Следующая тема](../03-administration-and-security/README.md) · [Глоссарий](../../references/glossary.md)
+
+## Практическое закрепление
+
+[L01. Идентичность, ревизия и рабочая итерация](../../practice/exercises/l01-identity/README.md). Условия, границы, заготовки и переход к эталону приведены в задании.

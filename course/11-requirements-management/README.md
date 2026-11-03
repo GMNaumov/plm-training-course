@@ -21,3 +21,7 @@
 ---
 
 [Предыдущая тема](../10-option-configuration/README.md) · [Следующая тема](../12-change-and-workflow/README.md) · [Глоссарий](../../references/glossary.md)
+
+## Практическое закрепление
+
+[L08. Требования и действительные свидетельства](../../practice/exercises/l08-requirements/README.md). Условия, границы, заготовки и переход к эталону приведены в задании.

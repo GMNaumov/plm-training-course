@@ -20,3 +20,7 @@ BOM — структура состава изделия; EBOM отражает 
 ---
 
 [Предыдущая тема](../07-documents-and-files/README.md) · [Следующая тема](../09-revision-configuration/README.md) · [Глоссарий](../../references/glossary.md)
+
+## Практическое закрепление
+
+[L05. Раскрытие EBOM без потери путей](../../practice/exercises/l05-ebom/README.md). Условия, границы, заготовки и переход к эталону приведены в задании.

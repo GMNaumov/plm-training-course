@@ -63,3 +63,7 @@ RPO описывает допустимую потерю данных по вр�
 ---
 
 [Предыдущая тема](../03-administration-and-security/README.md) · [Следующая тема](../05-master-and-reference-data/README.md) · [Глоссарий](../../references/glossary.md)
+
+## Практическое закрепление
+
+[L03. План запроса и восстановление копии](../../practice/exercises/l03-operations/README.md). Условия, границы, заготовки и переход к эталону приведены в задании.

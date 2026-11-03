@@ -20,3 +20,7 @@
 ---
 
 [Предыдущая тема](../14-process-and-routing/README.md) · [Следующая тема](../16-cad-cam-cae-integration/README.md) · [Глоссарий](../../references/glossary.md)
+
+## Практическое закрепление
+
+[L12. Фактическая история и границы знания](../../practice/exercises/l12-physical/README.md). Условия, границы, заготовки и переход к эталону приведены в задании.

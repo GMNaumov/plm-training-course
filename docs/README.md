@@ -7,3 +7,5 @@
 - [Формат, длительность и учебная нагрузка](delivery-format.md)
 - [Оценивание и критерии завершения курса](assessment.md)
 - [Предметная область сквозного примера](case-study.md)
+
+[Практические задания и карта покрытия](../practice/exercises/README.md) · [Контейнерная среда](../practice/environment/README.md)

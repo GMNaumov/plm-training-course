@@ -41,3 +41,16 @@
 Конкретные авиационные нормы, юрисдикция, требования к подписи, сертификации аппаратуры и ПО не определены. Версии коммерческих продуктов, адаптеров CAD и реальные API также не выбраны. Поэтому здесь нет вымышленных ссылок на их методы или утверждений об обязательном составе подтверждающих материалов.
 
 При последующем наполнении продуктовых деталей нужно фиксировать версию, модуль, статус документа и дату проверки. Для нормативных требований дополнительно устанавливают применимость к изделию и процессу. Обзорная продуктовая страница не заменяет нормативный текст или справку конкретного выпуска.
+
+[Практические задания и карта покрытия](../practice/exercises/README.md) · [Контейнерная среда](../practice/environment/README.md)
+
+
+## Контейнерный практикум (проверено 2026-11-03)
+
+Проверенные версии контейнеров приведены в [инструкции среды](../practice/environment/README.md); точные digest записаны в compose.yaml, драйвер защищён SHA-256. Выбор поддерживаемой версии — проектное решение, а не обещание всегда использовать новейший релиз.
+
+- [Официальный образ PostgreSQL](https://hub.docker.com/_/postgres) — тег 18.6, размещение тома /var/lib/postgresql для ветки 18. [Политика поддержки PostgreSQL](https://www.postgresql.org/support/versioning/) — основание выбора поддерживаемой ветки; [backup/restore](https://www.postgresql.org/docs/18/backup-dump.html) для L03.
+- [Python 3.15.0: выпуск ветки](https://www.python.org/downloads/release/python-3150/) и [официальный контейнер Python](https://hub.docker.com/_/python) — выбран тег 3.15.2-slim-bookworm. [Decimal](https://docs.python.org/3.15/library/decimal.html) — десятичные значения и конечность чисел L14.
+- [Eclipse Temurin 25 LTS](https://adoptium.net/temurin/releases/?version=25) — LTS-ветка; фактически проверена 25.0.5+8. [pgJDBC download](https://jdbc.postgresql.org/download/) — 42.7.14; [Connection: commit, rollback и autocommit](https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/Connection.html) и [PreparedStatement в pgJDBC](https://jdbc.postgresql.org/documentation/query/) — L13.
+- [Порядок запуска Compose](https://docs.docker.com/compose/how-tos/startup-order/) — healthcheck и service_healthy. [Compose profiles](https://docs.docker.com/compose/how-tos/profiles/) — одноразовые инструменты. [Docker Desktop WSL 2](https://docs.docker.com/desktop/features/wsl/) — способ запуска на Windows.
+- [PostgreSQL RLS](https://www.postgresql.org/docs/18/ddl-rowsecurity.html) — L02; [EXPLAIN](https://www.postgresql.org/docs/18/using-explain.html) — L03; [явные блокировки](https://www.postgresql.org/docs/18/explicit-locking.html) — L09/L13.

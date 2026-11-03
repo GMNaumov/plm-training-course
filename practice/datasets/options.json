@@ -1,0 +1,7 @@
+[
+  {"id":"C1","redundant":false,"controller":"SINGLE","firmware":"FW-A"},
+  {"id":"C2","redundant":true,"controller":"SINGLE","firmware":"FW-A"},
+  {"id":"C3","redundant":true,"controller":"DUAL","firmware":"FW-B"},
+  {"id":"C4","redundant":null,"controller":"DUAL","firmware":"FW-B"},
+  {"id":"C5","redundant":false,"controller":"DUAL","firmware":"FW-A"}
+]

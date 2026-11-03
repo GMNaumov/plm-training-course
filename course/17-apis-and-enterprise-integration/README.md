@@ -20,3 +20,7 @@
 ---
 
 [Предыдущая тема](../16-cad-cam-cae-integration/README.md) · [Следующая тема](../18-migration-and-data-quality/README.md) · [Глоссарий](../../references/glossary.md)
+
+## Практическое закрепление
+
+[L13. Java-потребитель: повтор, конфликт и откат](../../practice/exercises/l13-integration/README.md). Условия, границы, заготовки и переход к эталону приведены в задании.

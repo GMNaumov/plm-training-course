@@ -1,0 +1,4 @@
+-- TODO: выдать lab_reader USAGE схемы lab и SELECT только item/revision.
+-- TODO: включить RLS для revision и политику SELECT released для lab_reader.
+-- TODO: SET ROLE lab_reader, вывести допустимые ревизии, затем RESET ROLE.
+-- Изменение/чтение occurrence проверяются отдельно интерактивно как ожидаемые отказы.

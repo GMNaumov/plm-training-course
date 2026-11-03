@@ -72,3 +72,7 @@
 ---
 
 [Предыдущая тема](../13-manufacturing-bom/README.md) · [Следующая тема](../15-physical-product-lifecycle/README.md) · [Глоссарий](../../references/glossary.md)
+
+## Практическое закрепление
+
+[L11. Маршрут, распределение и готовность ресурсов](../../practice/exercises/l11-routing/README.md). Условия, границы, заготовки и переход к эталону приведены в задании.
