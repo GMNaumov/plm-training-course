@@ -1,4 +1,4 @@
-param(
+﻿param(
     [ValidateSet('up','reset','sql','psql','python','java','backup','restore','down','clean')]
     [string]$Action = 'up',
     [Parameter(ValueFromRemainingArguments = $true)][string[]]$Arguments
@@ -7,11 +7,11 @@ $ErrorActionPreference = 'Stop'
 $repo = [IO.Path]::GetFullPath((Join-Path $PSScriptRoot '../..'))
 function Invoke-Compose {
     & docker compose -f (Join-Path $repo 'compose.yaml') @args
-    if ($LASTEXITCODE -ne 0) { throw "Docker exit code: $LASTEXITCODE" }
+    if ($LASTEXITCODE -ne 0) { throw "Docker завершился с кодом: $LASTEXITCODE" }
 }
 function Require-Path {
     if (!$Arguments -or $Arguments[0] -notmatch '^practice/[a-zA-Z0-9_./-]+$' -or $Arguments[0].Contains('..')) {
-        throw 'Expected a relative practice/... path without ..'
+        throw 'Ожидается относительный путь practice/... без ..'
     }
 }
 switch ($Action) {
@@ -33,17 +33,17 @@ switch ($Action) {
     }
     backup { Invoke-Compose exec -T db pg_dump -U plm_owner -d plm -Fc -f /artifacts/plm.dump }
     restore {
-        # Restore into a separate database, preserving plm.
+        # Восстанавливаем в отдельную базу данных, сохраняя plm.
         Invoke-Compose exec -T db dropdb -U plm_owner --if-exists plm_restore
         Invoke-Compose exec -T db createdb -U plm_owner -T template0 plm_restore
         Invoke-Compose exec -T db pg_restore -U plm_owner -d plm_restore --exit-on-error /artifacts/plm.dump
     }
     down { Invoke-Compose down --remove-orphans }
     clean {
-        # Remove only this Compose project, never use docker system prune.
+        # Удаляем только выбранный проект Compose; глобальную очистку docker system prune не используем.
         Invoke-Compose --profile tools down --volumes --remove-orphans --rmi local
         $output = [IO.Path]::GetFullPath((Join-Path $repo 'practice/output'))
-        if ($output -ne (Join-Path $repo 'practice\output')) { throw 'Invalid cleanup path' }
+        if ($output -ne (Join-Path $repo 'practice\output')) { throw 'Недопустимый путь очистки' }
         Get-ChildItem -LiteralPath $output -Force | Where-Object Name -ne '.gitkeep' | Remove-Item -Recurse -Force
     }
 }

@@ -9,7 +9,7 @@ RULE = "mass-v1"
 def normalize(row: dict) -> dict:
     """Вернуть source_id, item_code, mass_kg, rule_version, original.
 
-    item_code: trim+upper; g->kg; Decimal, конечная положительная масса.
+    item_code: удалить крайние пробелы и перевести в верхний регистр; g → kg. Масса — конечное положительное Decimal.
     При неизвестном значении/единице выбросить ValueError с причиной.
     original: все исходные поля в JSON, без потери пробелов и исходной единицы.
     """
@@ -34,7 +34,7 @@ def run():
             except ValueError as exc:
                 rejected.writerow({"source_id": row["source_id"], "reason": str(exc), "original": json.dumps(row, ensure_ascii=False, sort_keys=True)})
                 counts[1] += 1
-    print(f"accepted={counts[0]} rejected={counts[1]} rule={RULE}")
+    print(f"Принято: {counts[0]}; отклонено: {counts[1]}; правило: {RULE}")
 
 
 if __name__ == "__main__":

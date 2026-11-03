@@ -11,7 +11,7 @@ public class EventConsumer {
 
     public static void main(String[] args) throws Exception {
         if (args.length < 4 || args.length > 5) {
-            throw new IllegalArgumentException("eventId aggregate version payload [fail]");
+            throw new IllegalArgumentException("Параметры: <идентификатор_события> <агрегат> <версия> <данные> [fail — сбой до фиксации]");
         }
         try (var db = DriverManager.getConnection(System.getenv("JDBC_URL"),
                 System.getenv("JDBC_USER"), System.getenv("JDBC_PASSWORD"))) {

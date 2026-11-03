@@ -12,4 +12,5 @@ DO $$ BEGIN
 END $$;
 \ir model.sql
 \ir ../../datasets/seed.sql
+\ir ../../java/advanced/schema.sql
 COMMIT;

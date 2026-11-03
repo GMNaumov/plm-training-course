@@ -4,11 +4,11 @@ CREATE TEMP TABLE incoming(LIKE lab.migration_stage INCLUDING ALL) ON COMMIT DRO
 DO $$ BEGIN
  IF EXISTS(SELECT FROM incoming i JOIN lab.migration_stage s USING(source_id)
  WHERE ROW(i.item_code,i.mass_kg,i.rule_version,i.original) IS DISTINCT FROM ROW(s.item_code,s.mass_kg,s.rule_version,s.original)) THEN
-   RAISE EXCEPTION 'Source key reused with different content';
+   RAISE EXCEPTION 'Ключ источника повторно использован с другим содержимым';
  END IF;
  IF EXISTS(SELECT item_code FROM incoming GROUP BY item_code HAVING count(DISTINCT mass_kg)>1)
  OR EXISTS(SELECT FROM incoming i JOIN lab.migration_target t USING(item_code) WHERE i.mass_kg<>t.mass_kg) THEN
-   RAISE EXCEPTION 'Conflicting mass for item';
+   RAISE EXCEPTION 'Противоречащие значения массы одного изделия';
  END IF;
 END $$;
 INSERT INTO lab.migration_stage SELECT * FROM incoming ON CONFLICT(source_id) DO NOTHING;

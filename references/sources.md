@@ -82,4 +82,24 @@
 
 ## Дополнение по технической корректности учебной модели
 
-[PostgreSQL 18: Numeric Types](https://www.postgresql.org/docs/18/datatype-numeric.html) — специальные значения numeric и их сравнение; используется для объяснения отличия положительности от конечности в теме 05 и предложении P02. [Row Security Policies](https://www.postgresql.org/docs/18/ddl-rowsecurity.html) — область действия RLS и особенности привилегированных контекстов. [Constraints](https://www.postgresql.org/docs/18/ddl-constraints.html) — границы CHECK, NULL и межстрочных ограничений. Эти страницы прочитаны при ревизии; новые исполняемые ограничения в практикум не добавлялись.
+Этот раздел фиксирует состояние предшествующей ревизии Markdown; новые Java-ограничения и сервисы описаны следующим разделом.
+
+[PostgreSQL 18: Numeric Types](https://www.postgresql.org/docs/18/datatype-numeric.html) — специальные значения numeric и их сравнение; используется для объяснения отличия положительности от конечности в теме 05 и предложении P02. [Row Security Policies](https://www.postgresql.org/docs/18/ddl-rowsecurity.html) — область действия RLS и особенности привилегированных контекстов. [Constraints](https://www.postgresql.org/docs/18/ddl-constraints.html) — границы CHECK, NULL и межстрочных ограничений. Эти страницы прочитаны при ревизии; новые исполняемые ограничения в практикум на том этапе не добавлялись.
+
+## Первичные источники углублённой Java-ветки
+
+Проверены 2026-11-03 при реализации J01–J12. Используется прежний закреплённый стек; документация Java относится к SE 25, PostgreSQL — к 18. Коммерческие API новыми заданиями не вызываются.
+
+| Источник | Область применения |
+| --- | --- |
+| [Java 25: source-file mode](https://docs.oracle.com/en/java/javase/25/docs/specs/man/java.html#using-source-file-mode-to-launch-source-code-programs) | Компиляция нужных соседних исходников; запуск Lab и OrderedConsumer без Maven/Gradle |
+| [Connection](https://docs.oracle.com/en/java/javase/25/docs/api/java.sql/java/sql/Connection.html) | Владение соединением, autoCommit, isolation, commit и rollback |
+| [BigDecimal](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/math/BigDecimal.html) | Точная десятичная арифметика и различие compareTo/equals для J01/J03/J04 |
+| [PostgreSQL: explicit locking](https://www.postgresql.org/docs/18/explicit-locking.html) | Совместимость KEY SHARE и NO KEY UPDATE, блокировки строк и deadlock в J05/J09 |
+| [PostgreSQL: transaction isolation](https://www.postgresql.org/docs/18/transaction-iso.html) | Снимки READ COMMITTED/REPEATABLE READ и повторная проверка изменённых строк |
+| [PostgreSQL: SELECT](https://www.postgresql.org/docs/18/sql-select.html) | FOR UPDATE OF, SKIP LOCKED и граница применения к очереди J07 |
+| [pgJDBC: cursor results](https://jdbc.postgresql.org/documentation/query/#getting-results-based-on-a-cursor) | Требования к cursor/fetchSize в J12 |
+| [Executors](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/Executors.html), [ExecutorService](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/ExecutorService.html), [Semaphore](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/concurrent/Semaphore.html) | Виртуальные потоки, жизненный цикл задач, отмена и ограничение выдачи J11 |
+| [Files](https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/nio/file/Files.html) | Реальные пути, потоковое чтение, временный файл и ATOMIC_MOVE в J11/J12 |
+
+Эталонный код и схемы — авторская учебная модель. Условия гарантии дополнительно ограничены контрактами заданий; ссылка на API не означает готовность промышленного сервиса.
